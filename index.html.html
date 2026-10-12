@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vidushi Infotech — Weekly Marketing Dashboard</title>
+<style>
+:root{--blue:#175cd3;--ink:#182230;--muted:#667085;--bg:#f4f7fb;--line:#e4e7ec;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,Segoe UI,Arial,sans-serif}
+.wrap{max-width:1440px;margin:auto;padding:28px}header{background:linear-gradient(120deg,#123e85,#1767c5);color:white;padding:28px;border-radius:18px;display:flex;justify-content:space-between;align-items:center;gap:18px;box-shadow:0 10px 28px #123e8520}
+h1{font-size:clamp(24px,3vw,34px);margin:0 0 5px}header p{margin:0;color:#dceaff}.period{font-weight:700;background:#ffffff20;border:1px solid #ffffff50;padding:10px 14px;border-radius:10px;white-space:nowrap}
+h2{font-size:21px;margin:28px 0 14px}h3{font-size:16px;margin:0 0 16px}.muted{color:var(--muted);font-size:13px}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.card,.panel{background:white;border:1px solid var(--line);border-radius:14px;padding:19px;box-shadow:0 2px 5px #10182808}
+.kpi{position:relative;overflow:hidden}.kpi:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--blue)}.kpi.gsc:before{background:#d92d20}.kpi.bing:before{background:#0086c9}
+.kpi .label{font-size:13px;color:var(--muted);font-weight:600}.value{font-size:30px;line-height:1.25;font-weight:750;letter-spacing:-.6px;margin-top:7px}.group-label{font-size:12px;color:#475467;margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.chart{width:100%;height:270px;display:block}.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted)}.dot{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:6px}
+.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:11px 12px}th{background:#f9fafb;color:#475467;font-size:12px;text-transform:uppercase;letter-spacing:.03em}tbody tr:hover{background:#f8fbff}
+.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px}select,input{padding:9px 11px;border:1px solid #d0d5dd;border-radius:8px;background:white;color:var(--ink)}.notice{background:#fffaeb;border:1px solid #fedf89;color:#854a0e;padding:12px 14px;border-radius:10px;font-size:13px;margin-top:14px}.status{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.status div{padding:13px;background:#f9fafb;border-radius:10px;border:1px solid var(--line)}.ok{color:#067647;font-weight:700}.footer{color:var(--muted);font-size:12px;text-align:center;padding:28px 0 8px}
+@media(max-width:1000px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:700px){.wrap{padding:14px}header{align-items:flex-start;flex-direction:column;padding:22px}.period{white-space:normal}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.grid,.status{grid-template-columns:1fr}.value{font-size:25px}}@media(max-width:390px){.kpis{grid-template-columns:1fr}}
+</style>
+</head>
+<body><main class="wrap">
+<header><div><h1>Vidushi Infotech</h1><p>Weekly Marketing Performance Dashboard</p></div><div class="period">Oct 5 – Oct 11, 2026</div></header>
+<h2>Key performance indicators</h2>
+<section class="kpis" aria-label="Key performance indicators">
+<div class="card kpi"><div class="label">GA4 Users</div><div class="value">169</div><div class="group-label">Google Analytics 4</div></div>
+<div class="card kpi"><div class="label">New Users</div><div class="value">158</div><div class="group-label">Google Analytics 4</div></div>
+<div class="card kpi"><div class="label">Sessions</div><div class="value">178</div><div class="group-label">Google Analytics 4</div></div>
+<div class="card kpi"><div class="label">Engaged Sessions</div><div class="value">140</div><div class="group-label">Google Analytics 4</div></div>
+<div class="card kpi"><div class="label">Engagement Rate</div><div class="value">78.65%</div><div class="group-label">Google Analytics 4</div></div>
+<div class="card kpi"><div class="label">Avg. Engagement Time</div><div class="value">105.72s</div><div class="group-label">Google Analytics 4</div></div>
+<div class="card kpi"><div class="label">Conversions</div><div class="value">0</div><div class="group-label">Conversion rate: 0.0%</div></div>
+<div class="card kpi"><div class="label">Revenue</div><div class="value">0.0</div><div class="group-label">Google Analytics 4</div></div>
+<div class="card kpi gsc"><div class="label">GSC Clicks</div><div class="value">139</div><div class="group-label">Google Search Console</div></div>
+<div class="card kpi gsc"><div class="label">GSC Impressions</div><div class="value">3,300</div><div class="group-label">Google Search Console</div></div>
+<div class="card kpi gsc"><div class="label">GSC Click-through rate</div><div class="value">4.21%</div><div class="group-label">Google Search Console</div></div>
+<div class="card kpi gsc"><div class="label">GSC Avg. Position</div><div class="value">28.51</div><div class="group-label">Google Search Console</div></div>
+<div class="card kpi bing"><div class="label">Bing Clicks</div><div class="value">1</div><div class="group-label">Bing Webmaster Tools</div></div>
+<div class="card kpi bing"><div class="label">Bing Impressions</div><div class="value">108</div><div class="group-label">Bing Webmaster Tools</div></div>
+<div class="card kpi bing"><div class="label">Bing Click-through rate</div><div class="value">0.93%</div><div class="group-label">Bing Webmaster Tools</div></div>
+<div class="card kpi bing"><div class="label">Bing Avg. Position</div><div class="value">25.0</div><div class="group-label">Bing Webmaster Tools</div></div>
+</section>
+<h2>Website traffic</h2>
+<section class="grid">
+<div class="panel"><h3>Traffic acquisition — sessions</h3><canvas class="chart" id="trafficChart" aria-label="Sessions by source"></canvas><div class="legend"><span><i class="dot" style="background:#175cd3"></i>Google organic: 163</span><span><i class="dot" style="background:#84adff"></i>Direct: 15</span></div></div>
+<div class="panel"><h3>Device distribution — sessions</h3><canvas class="chart" id="deviceChart" aria-label="Sessions by device"></canvas><div class="legend"><span><i class="dot" style="background:#175cd3"></i>Desktop: 126</span><span><i class="dot" style="background:#53b1fd"></i>Mobile: 50</span><span><i class="dot" style="background:#a6f4c5"></i>Tablet: 2</span></div></div>
+</section>
+<h2>GA4 landing pages</h2>
+<section class="panel"><div class="controls"><label for="landingSort">Sort by</label><select id="landingSort"><option value="users">Users</option><option value="sessions">Sessions</option></select><input id="landingSearch" placeholder="Search landing pages…" aria-label="Search landing pages"></div>
+<div class="table-wrap"><table id="landingTable"><thead><tr><th>Landing page</th><th>Users</th><th>Sessions</th></tr></thead><tbody></tbody></table></div>
+<p class="muted">Only landing-page rows visible in the supplied output are included; this is not a complete landing-page export.</p></section>
+<h2>Search performance</h2>
+<section class="grid">
+<div class="panel"><h3>Google Search Console</h3><div class="status"><div><span class="muted">Clicks</span><br><b>139</b></div><div><span class="muted">Impressions</span><br><b>3,300</b></div><div><span class="muted">CTR</span><br><b>4.21%</b></div></div><div class="notice">The uploaded HTML output did not include the underlying query/page rows. Those tables are not populated with guessed values.</div></div>
+<div class="panel"><h3>Bing Webmaster Tools</h3><div class="status"><div><span class="muted">Clicks</span><br><b>1</b></div><div><span class="muted">Impressions</span><br><b>108</b></div><div><span class="muted">CTR</span><br><b>0.93%</b></div></div><div class="notice">Bing summary metrics are available in the output. Query details were not included in the provided HTML extract; top pages were reported as unavailable.</div></div>
+</section>
+<h2>Data source status</h2><section class="panel status"><div><span class="ok">● Success</span><br><b>Google Analytics 4</b><br><span class="muted">Metrics available</span></div><div><span class="ok">● Success</span><br><b>Google Search Console</b><br><span class="muted">Metrics available</span></div><div><span class="ok">● Success in supplied run</span><br><b>Bing Webmaster Tools</b><br><span class="muted">Summary metrics available; page data unavailable</span></div></section>
+<p class="footer">Source: supplied Generate Dashboard HTML output and execution summary. No comparison-period or growth values were inferred.</p>
+</main>
+<script>
+const palette=['#175cd3','#84adff','#53b1fd','#a6f4c5'];
+function drawBars(canvasId, labels, values, colors){
+ const c=document.getElementById(canvasId),ctx=c.getContext('2d');
+ function render(){const dpr=window.devicePixelRatio||1,w=c.clientWidth,h=270;c.width=w*dpr;c.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+ const left=42,right=14,top=18,bottom=44,plotW=w-left-right,plotH=h-top-bottom,max=Math.max(...values)*1.15;
+ ctx.font='12px Segoe UI,Arial';ctx.textAlign='right';ctx.textBaseline='middle';ctx.fillStyle='#667085';
+ for(let i=0;i<=4;i++){let y=top+plotH*i/4;ctx.strokeStyle='#eaecf0';ctx.beginPath();ctx.moveTo(left,y);ctx.lineTo(w-right,y);ctx.stroke();ctx.fillText(Math.round(max*(1-i/4)),left-8,y);}
+ const slot=plotW/values.length,bw=Math.min(64,slot*.55);
+ values.forEach((v,i)=>{const bh=plotH*v/max,x=left+slot*i+(slot-bw)/2,y=top+plotH-bh;ctx.fillStyle=colors[i%colors.length];ctx.beginPath();ctx.roundRect(x,y,bw,bh,5);ctx.fill();ctx.fillStyle='#344054';ctx.textAlign='center';ctx.fillText(v,x+bw/2,y-10);ctx.fillStyle='#667085';ctx.fillText(labels[i],x+bw/2,h-20);});
+ }
+ render();window.addEventListener('resize',render);
+}
+drawBars('trafficChart',['Google organic','Direct'],[163,15],palette);
+drawBars('deviceChart',['Desktop','Mobile','Tablet'],[126,50,2],palette);
+const landingRows=[{page:'/',users:159,sessions:167},{page:'/blog/',users:7,sessions:7}];
+function renderLanding(){const sort=document.getElementById('landingSort').value,term=document.getElementById('landingSearch').value.toLowerCase();const rows=landingRows.filter(r=>r.page.toLowerCase().includes(term)).sort((a,b)=>b[sort]-a[sort]);document.querySelector('#landingTable tbody').innerHTML=rows.map(r=>`<tr><td>${r.page}</td><td>${r.users}</td><td>${r.sessions}</td></tr>`).join('')||'<tr><td colspan="3">No matching rows</td></tr>';}
+document.getElementById('landingSort').addEventListener('change',renderLanding);document.getElementById('landingSearch').addEventListener('input',renderLanding);renderLanding();
+</script></body></html>
